@@ -1,0 +1,23 @@
+.tabl {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(26, 0, 128);
+    color: #012c32;
+}
+
+.name {
+    color: #9f0960;
+}
+
+thead {
+    background-color: #28f2e5;
+    font-size: x-large;
+}
+
+tbody {
+    background-color: #cfebe9;
+}
+
+td {
+    font-weight: bold;
+}
