@@ -1,0 +1,45 @@
+.header {
+    font-weight: 800;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.img {
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+    border: 2px solid #050101
+    ;
+}
+
+.main_text {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 1200px;
+    padding: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+div {
+    padding-left: 15px;
+}
+
+.list {
+    font-size: 24px;
+}
+
+.tbl {
+    border-collapse: collapse;
+    font-size: 20px;
+    border: 1px solid rgb(14, 12, 12);
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+td, tr, th {
+    border: 1px solid gray;
+    text-align: left;
+    width: 300px;
+}
