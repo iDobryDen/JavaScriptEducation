@@ -1,22 +1,37 @@
-const numberBtns = document.querySelectorAll('.calc-btn');
-console.log(numberBtns);
-const opertionsBtns = document.querySelectorAll('.calc-operation-btn');
-console.log(opertionsBtns);
-const displayBlock = document.querySelector('.calc-display');
+const firm = {
+    name: "chetverochka",
+    income: 1000000,
+    expenses: 400000,
+    workers: [{
+        name: "Petrov Ivan",
+        jobTitle: "SEO"
+        },
+        {
+            name: "Ivanova Anna",
+            jobTitle: "бухгалтер"
+        },
+        {
+            name: "Васильев Игорь",
+            jobTitle: "Менеджер"
+        },
+        {
+            name: "Егоров Павел",
+            jobTitle: "Разнорабочий"
+        }
+        
+    ]
+}
 
-for (let i = 0; i < numberBtns.length; i++){
-    numberBtns[i].addEventListener('click', function(){
-        displayBlock.innerHTML = displayBlock.innerHTML + numberBtns[i].innerHTML;
-    }
-)}
+const companyName = document.querySelector(".company-name");
+const income_company = document.querySelector(".income_company");
+const expenses_company = document.querySelector(".expenses_company");
+const name_worker = document.querySelector(".workers");
 
-for (let i = 0; i < opertionsBtns.length-1; i++){
-    opertionsBtns[i].addEventListener('click', function(){
-        displayBlock.innerHTML = displayBlock.innerHTML + opertionsBtns[i].innerHTML;
-    }
-)}
+companyName.innerHTML = firm.name;
+income_company.innerHTML = firm.income;
+expenses_company.innerHTML = firm.expenses;
 
-opertionsBtns[opertionsBtns.length-1].addEventListener('click', function(){
-    const result = eval(displayBlock.innerHTML);
-    displayBlock.innerHTML = result;
+firm.workers.forEach(function(item){
+    const workerElements = `<div>${item.name} - ${item.jobTitle}</div>`;
+    name_worker.insertAdjacentHTML('beforeend', workerElements);
 })

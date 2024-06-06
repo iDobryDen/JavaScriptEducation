@@ -1,38 +1,18 @@
-.calc {
-    width: 300px;
-    background-color: rgb(54, 163, 165);
+.body{
+    height: 500px;
+    width: 500px;
+    background-color: darkseagreen;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: darkblue;
 }
 
-.calc-display {
-    width: 100%;
-    background-color: aliceblue;
-    height: 50px;
+.company-name{
+    font-weight: 800;
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
-.calc-btn {
-    width: 33%;
-    height: 50px;
-    background-color: aliceblue;
-    border: 1px solid rgb(54, 163, 165);
-    flex: 1 1 33%;
-}
-
-.calc-btns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.calc-operation-btn {
-    width: 33%;
-    height: 50px;
-    background-color: aliceblue;
-    border: 1px solid rgb(54, 163, 165);
-    flex: 1 1 20%;
-}
-
-.calc-operation-btns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+span{
+    font-size: large;
 }
