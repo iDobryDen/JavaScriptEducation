@@ -199,7 +199,15 @@ btn3.addEventListener('click', function() {
     makeString();
 })
 
+const aaa = ["Бильбо", "Гэндальф", "Назгул"];
+aaa.forEach((item, index, array) => {
+    alert(`У ${item} индекс ${index} в ${array}`);
+  });
 
+let fruits = ['Яблоко', 'Апельсин', 'Яблоко']
+
+alert( fruits.indexOf('Яблоко') ); // 0 (первый 'Яблоко')
+alert( fruits.lastIndexOf('Яблоко') ); // 2 (последний 'Яблоко')
 
 
 
